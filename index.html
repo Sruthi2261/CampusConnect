@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+        
+<body>
+     
+    <nav>
+    <div class="logo">CampusConnect</div>
+
+    <div class="nav-links">
+        <a href="#events">Events</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#resources">Resources</a>
+    </div>
+</nav>
+    <header>
+        <h1>CampusConnect</h1>
+        <p>Your one place for everything happening on campus.</p>
+<input
+        type="text"
+        id="searchInput"
+        placeholder="Search events, clubs, announcements..."
+    >
+    </header>
+
+    <main>
+
+      <section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="card">
+        <h3>College Cultural Fest</h3>
+        <p>Date: October 10, 2026</p>
+        <p>Annual cultural celebration with music, dance and competitions.</p>
+
+        <button onclick="showMessage('College Cultural Fest details coming soon!')">
+            View Event
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Tech Hackathon</h3>
+        <p>Date: October 18, 2026</p>
+        <p>Build innovative solutions with students from different departments.</p>
+
+        <button onclick="showMessage('Tech Hackathon details coming soon!')">
+            View Event
+        </button>
+    </div>
+</section>
+
+
+<section id="add-event">
+    <h2>Post a New Event</h2>
+
+    <div class="card">
+        <form id="eventForm">
+
+            <input
+                type="text"
+                id="eventName"
+                placeholder="Event name"
+                required
+            >
+
+            <input
+                type="date"
+                id="eventDate"
+                required
+            >
+
+            <textarea
+                id="eventDescription"
+                placeholder="Event description"
+                rows="4"
+                required
+            ></textarea>
+
+            <button type="submit">Add Event</button>
+
+        </form>
+    </div>
+</section>
+
+        <section id="clubs">
+            <h2>Student Clubs</h2>
+
+            <div class="card">
+                <h3>Coding Club</h3>
+                <p>Learn programming, participate in coding competitions and build projects.</p>
+                 <button onclick="showMessage('Welcome to the Coding Club!')">
+    Explore Club
+</button>           </div>
+
+            <div class="card">
+                <h3>Sports Club</h3>
+                <p>Join sports activities, tournaments and fitness events.</p>
+                <button onclick="showMessage('Welcome to the Sports Club!')">
+    Explore Club
+</button>            </div>
+        </section>
+
+
+        <section id="announcements">
+            <h2>Announcements</h2>
+
+            <div class="card">
+                <h3>Semester Registration</h3>
+                <p>Semester registration will begin soon. Check the academic calendar for details.</p>
+            </div>
+
+            <div class="card">
+                <h3>Campus Recruitment</h3>
+                <p>New placement opportunities will be announced through the campus portal.</p>
+            </div>
+        </section>
+
+
+        <section id="resources">
+            <h2>Campus Resources</h2>
+
+            <div class="card">
+                <h3>Library</h3>
+                <p>Find books, study materials and library information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Support</h3>
+                <p>Access academic and student support resources.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CampusConnect | Student Campus Platform</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
